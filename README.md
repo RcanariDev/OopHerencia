@@ -24,11 +24,11 @@ class Acceso:
 
     def InicioSesion(self):
         self.cnxn = pyodbc.connect('DRIVER={SQL Server};'
-                      'Server=eis-app.database.windows.net;'
-                      'Database=eis;'
+                      'Server=xxx-xxx.xxxxxxxx.xxxxxxx.xxx;'
+                      'Database=xxx;'
                       'Port=1433;'
-                      'UID=eis-pbi;'
-                      'PWD=123ppp+++;')
+                      'UID=xxx-xxx;'
+                      'PWD=xxxxxxxxx;')
         self.cur = self.cnxn.cursor()
     
     def CerrarSesion(self):
